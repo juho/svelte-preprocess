@@ -1,7 +1,7 @@
 import type {
-  Processed as SvelteProcessed,
   Preprocessor,
-} from 'svelte/types/compiler/preprocess';
+  Processed as SvelteProcessed,
+} from 'svelte/types/compiler/preprocess/types';
 
 import * as Options from './options';
 
@@ -11,7 +11,7 @@ export {
   Processed as SvelteProcessed,
   PreprocessorGroup,
   Preprocessor,
-} from 'svelte/types/compiler/preprocess';
+} from 'svelte/types/compiler/preprocess/types';
 
 export type PreprocessorArgs = Preprocessor extends (options: infer T) => any
   ? T
